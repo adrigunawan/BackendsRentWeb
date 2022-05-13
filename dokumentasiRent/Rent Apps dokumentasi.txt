@@ -1,0 +1,68 @@
+Dokumentasi rent apps
+
+- Penjual Rumah/Properti
+- Pembeli Rumah/Properti
+- Sewa Properti
+
+Backend Rent Apps
+- node js
+- mysql
+- body parser
+- cors
+- express
+
+FrontEnd Rent Apps
+- React JS
+
+API Rent Apps
+
+- GET
+- POST
+- PUT
+- DELETE
+
+        - "/homepage" = Halaman utama rent
+        - "/users" = halaman user
+        - "/users/:id" = detail user
+        - "/users/:name = detail nama user
+        - "/products" = Halaman isi product
+        - "/products/:id" = detail product
+
+Database Rent Apps
+
+Login Pembeli/Penjual
+==================
+id_user = int PK
+username = string
+password = string
+
+Register Pembeli/penjual
+====================
+id_user= int PK
+username = string 
+password = string
+email = string
+alamat = string
+no_telp = int
+
+spesifikasi rumah
+==============
+id = int FK
+lokasi = string
+luas = int
+harga = int
+
+Database = rent_house
+===================================
+
+User Journey
+==========
+Register = Halaman pertama user sebelum masuk ke website
+Login = Halaman user memasukan identitas ke website
+                 - Google
+                 - Facebook
+                 - Instagram
+Homepage = halaman pertama user setelah memasukan identitas
+Profile = Halaman edit data user
+sewa = halaman product yang ingin user sewa
+titip jual/beli = user dapat menaruh product untuk di jual
