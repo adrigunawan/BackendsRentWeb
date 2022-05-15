@@ -9,7 +9,7 @@ const cors = require('cors');
 const router = require('./routes/router');
 const PORT = process.env.PORT || 4000;
 const originalCors = {
-    host: `http://localhost@${PORT}`
+    host: `http://localhost:${PORT}`
 }
 
 app.use(cors(originalCors));
@@ -18,6 +18,6 @@ app.use(express.urlencoded({extended: true}));
 
 app.use(express.json());
 
-app.use(router);
+app.use('/',router);
 
 app.listen(PORT, () => console.log('listening on port', PORT));
